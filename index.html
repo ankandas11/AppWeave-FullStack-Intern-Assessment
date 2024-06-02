@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping</title>
+</head>
+<body>
+    <!---responsive layout with bootstrap :) -->
+    <div class="container">
+        <header class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="img/Designer.png" alt="Retro Thread Co. Logo" class="logo">
+                <h1 class="ml-3">Retro Thread Co.</h1>
+            </div>
+            <div class="shopping">
+                <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+        <div class="row mb-3">
+            <div class="col-md-8">
+                <input type="text" class="form-control" id="searchBar" placeholder="Search for products...">
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary" id="searchButton">Search</button>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <div class="btn-group" role="group" aria-label="Filter Group">
+                    <button type="button" class="btn btn-secondary" onclick="filterBy('all')">All</button>
+                    <button type="button" class="btn btn-secondary" onclick="filterBy('color', 'green')">Green</button>
+                    <button type="button" class="btn btn-secondary" onclick="filterBy('color', 'red')">Red</button>
+                    <button type="button" class="btn btn-secondary" onclick="filterBy('color', 'blue')">Blue</button>
+                    <button type="button" class="btn btn-secondary" onclick="filterBy('color', 'yellow')">Yellow</button>
+                    <button type="button" class="btn btn-secondary" onclick="filterBy('gender', 'men')">Men</button>
+                    <button type="button" class="btn btn-secondary" onclick="filterBy('gender', 'women')">Women</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="list row"></div>
+    </div>
+
+    <footer class="mt-auto py-3">
+        <div class="footer-box">
+            <div class="container">
+                <span class="text-muted"><a href="https://www.linkedin.com/in/ankanhere/" target="_blank">About Me</a></span>
+                <span class="text-muted"><a href="https://github.com/ankandas11" target="_blank">GitHub</a></span>
+                <span class="text-muted"><a href="https://www.geeksforgeeks.org/user/ankan2004/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" target="_blank">GeeksforGeeks</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
