@@ -5,14 +5,14 @@ let listCards = JSON.parse(localStorage.getItem('cart')) || [];
 
 // loading the products first
 const products = [
-    { "id": 1, "name": "blue_frock_women", "image": "1.png", "price": 2000, "type": "t-shirt", "color": "blue", "gender": "women", "quantity": 10 },
-    { "id": 2, "name": "blue_jeans_men", "image": "2.png", "price": 2200, "type": "t-shirt", "color": "blue", "gender": "men", "quantity": 5 },
-    { "id": 3, "name": "green_tshirt_men", "image": "3.png", "price": 2400, "type": "t-shirt", "color": "green", "gender": "men", "quantity": 8 },
-    { "id": 4, "name": "Yellow_kurta_men", "image": "4.png", "price": 2600, "type": "t-shirt", "color": "yellow", "gender": "men", "quantity": 6 },
-    { "id": 5, "name": "pink_patiyala", "image": "5.png", "price": 1400, "type": "t-shirt", "color": "pink", "gender": "women", "quantity": 7 },
-    { "id": 6, "name": "red_saree_women", "image": "6.png", "price": 1800, "type": "t-shirt", "color": "red", "gender": "women", "quantity": 4 },
-    { "id": 7, "name": "red_tshirt_men", "image": "7.png", "price": 1800, "type": "t-shirt", "color": "red", "gender": "men", "quantity": 13 },
-    { "id": 8, "name": "yellow_lehenga_women", "image": "8.png", "price": 1800, "type": "t-shirt", "color": "yellow", "gender": "women", "quantity": 11 }
+    { "id": 1, "name": "Frock Women", "image": "1.png", "price": 2000, "type": "t-shirt", "color": "blue", "gender": "women", "quantity": 10 },
+    { "id": 2, "name": "Denim Jeans Men", "image": "2.png", "price": 2200, "type": "t-shirt", "color": "blue", "gender": "men", "quantity": 5 },
+    { "id": 3, "name": "Lehenga Women", "image": "3.png", "price": 2500, "type": "t-shirt", "color": "yellow", "gender": "women", "quantity": 11 },
+    { "id": 4, "name": "Saree Women", "image": "4.png", "price": 1800, "type": "t-shirt", "color": "red", "gender": "women", "quantity": 4 },
+    { "id": 5, "name": "T-Shirt Men", "image": "5.png", "price": 1000, "type": "t-shirt", "color": "red", "gender": "men", "quantity": 13 },
+    { "id": 6, "name": "Kurta Men", "image": "6.png", "price": 2600, "type": "t-shirt", "color": "yellow", "gender": "men", "quantity": 6 },
+    { "id": 7, "name": "T-Shirt Men", "image": "7.png", "price": 2400, "type": "t-shirt", "color": "green", "gender": "men", "quantity": 8 },
+    { "id": 8, "name": "Patiyala Women", "image": "8.png", "price": 1400, "type": "t-shirt", "color": "pink", "gender": "women", "quantity": 7 }
 ];
 
 const renderCart = () => {
