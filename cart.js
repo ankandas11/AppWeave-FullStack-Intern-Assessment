@@ -87,6 +87,7 @@ const removeItem = (index) => {
 };
 
 //Finally the total price
+//and proceed
 
 const updateTotal = () => {
     const total = listCards.reduce((sum, item) => sum + item.price * item.quantity, 0);
